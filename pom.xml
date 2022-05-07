@@ -68,6 +68,11 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-jdbc</artifactId>
     </dependency>
+    
+    <dependency>
+	  <groupId>org.camunda.bpm</groupId>
+	  <artifactId>camunda-engine-plugin-connect</artifactId>
+	</dependency>
 
   </dependencies>
 
