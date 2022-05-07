@@ -20,7 +20,8 @@
       "validate": {
         "required": true,
         "regularExpressionPattern": "Taipei|Taichung"
-      }
+      },
+      "properties": {}
     }
   ],
   "type": "default",
