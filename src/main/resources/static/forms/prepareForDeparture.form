@@ -20,11 +20,12 @@
       "validate": {
         "required": true,
         "regularExpressionPattern": "Taipei|Taichung"
-      }
+      },
+      "properties": {}
     }
   ],
   "type": "default",
-  "id": "Form_0lxexir",
+  "id": "prepareForDeparture",
   "exporter": {
     "name": "Camunda Modeler",
     "version": "5.0.0"

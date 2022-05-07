@@ -15,8 +15,8 @@
       "label": "Where are you headed?",
       "type": "textfield",
       "id": "Field_1gcnjka",
-      "key": "field_0nsf1m4",
-      "description": "Counrty you are going to",
+      "key": "city",
+      "description": "City you are going to",
       "validate": {
         "required": true,
         "regularExpressionPattern": "Japan|America"
@@ -34,7 +34,7 @@
     }
   ],
   "type": "default",
-  "id": "Form_0lxexir",
+  "id": "getTaxi",
   "exporter": {
     "name": "Camunda Modeler",
     "version": "5.0.0"
