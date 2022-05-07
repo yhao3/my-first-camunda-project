@@ -1,0 +1,35 @@
+{
+  "components": [
+    {
+      "label": "Pack Cash",
+      "type": "textfield",
+      "id": "Field_0mponji",
+      "key": "money",
+      "description": "How much cash do you want to bring?",
+      "validate": {
+        "required": true,
+        "regularExpressionPattern": "^(?:0|[1-9][0-9]*\\.[0-9]+$"
+      }
+    },
+    {
+      "label": "Where are you headed?",
+      "type": "textfield",
+      "id": "Field_1gcnjka",
+      "key": "city",
+      "description": "City you are going to",
+      "validate": {
+        "required": true,
+        "regularExpressionPattern": "Taipei|Taichung"
+      }
+    }
+  ],
+  "type": "default",
+  "id": "Form_0lxexir",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.0.0"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.17.0",
+  "schemaVersion": 4
+}
