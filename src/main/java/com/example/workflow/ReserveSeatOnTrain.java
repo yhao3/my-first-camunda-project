@@ -2,6 +2,7 @@ package com.example.workflow;
 
 import javax.inject.Named;
 
+import org.camunda.bpm.engine.delegate.BpmnError;
 import org.camunda.bpm.engine.delegate.DelegateExecution;
 import org.camunda.bpm.engine.delegate.JavaDelegate;
 
@@ -21,6 +22,9 @@ public class ReserveSeatOnTrain implements JavaDelegate {
 			ticketType = "First Class";
 		} else if (moneyDouble >= 5000) {
 			ticketType = "Business Class";
+		} else if (moneyDouble <= 10) {
+			ticketType = null;
+			throw new BpmnError("CannotAfford", "Can't afford the ticket");
 		}
 		
 		delegateExecution.setVariable("ticketType", ticketType);
